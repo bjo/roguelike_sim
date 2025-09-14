@@ -1,0 +1,21 @@
+[
+  {
+    "id": "emergency_rations",
+    "name": "Emergency Rations",
+    "rarity": "common",
+    "oneShot": true,
+    "effects": [
+      {
+        "id": "emergency_food",
+        "scope": "card",
+        "tags": ["aid"],
+        "modifiers": [
+          { "kind": "resource_add", "resource": "food", "amount": 3 }
+        ],
+        "duration": "instant"
+      }
+    ]
+  }
+]
+
+

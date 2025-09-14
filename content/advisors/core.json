@@ -1,0 +1,37 @@
+[
+  {
+    "id": "ares",
+    "name": "Ares",
+    "tags": ["war"],
+    "passiveEffects": [
+      {
+        "id": "ares_production_war",
+        "scope": "global",
+        "tags": ["war"],
+        "modifiers": [
+          { "kind": "yield_add", "resource": "production", "amount": 1 }
+        ],
+        "duration": "permanent"
+      }
+    ],
+    "crisisOptionsUnlocked": ["military_response"]
+  },
+  {
+    "id": "demeter",
+    "name": "Demeter",
+    "tags": ["harvest"],
+    "passiveEffects": [
+      {
+        "id": "demeter_food",
+        "scope": "global",
+        "tags": ["agriculture"],
+        "modifiers": [
+          { "kind": "yield_add", "resource": "food", "amount": 1 }
+        ],
+        "duration": "permanent"
+      }
+    ]
+  }
+]
+
+

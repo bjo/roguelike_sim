@@ -1,0 +1,53 @@
+[
+  {
+    "id": "harvest",
+    "label": "Harvest",
+    "category": "growth",
+    "eraUnlock": "bronze",
+    "actionPointCost": 1,
+    "cooldownTurns": 1,
+    "immediateDeltas": [{ "type": "food", "amount": 2 }]
+  },
+  {
+    "id": "build_fields",
+    "label": "Build Fields",
+    "category": "infrastructure",
+    "eraUnlock": "bronze",
+    "actionPointCost": 1,
+    "costs": [{ "type": "materials", "amount": 2 }],
+    "addEffects": [
+      {
+        "id": "city_fields_food_1",
+        "scope": "city",
+        "tags": ["agriculture"],
+        "modifiers": [
+          { "kind": "yield_add", "resource": "food", "amount": 1 }
+        ],
+        "duration": "permanent"
+      }
+    ]
+  },
+  {
+    "id": "train_militia",
+    "label": "Train Militia",
+    "category": "military",
+    "eraUnlock": "bronze",
+    "actionPointCost": 1,
+    "costs": [
+      { "type": "production", "amount": 2 },
+      { "type": "materials", "amount": 1 }
+    ],
+    "addEffects": [
+      {
+        "id": "militia_drill",
+        "scope": "city",
+        "tags": ["military"],
+        "modifiers": [],
+        "duration": "turns",
+        "remainingTurns": 3
+      }
+    ]
+  }
+]
+
+

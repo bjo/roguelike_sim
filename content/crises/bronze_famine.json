@@ -1,0 +1,28 @@
+{
+  "id": "bronze_famine",
+  "era": "bronze",
+  "title": "Famine",
+  "description": "Harvest fails across the heartland.",
+  "intensity": 1,
+  "options": [
+    {
+      "id": "ration",
+      "label": "Ration stores",
+      "costs": [{ "type": "food", "amount": 3 }],
+      "outcomes": [
+        { "chance": 0.85, "deltas": [{ "type": "unity", "amount": 1 }] },
+        { "chance": 0.15, "deltas": [{ "type": "unity", "amount": -1 }] }
+      ]
+    },
+    {
+      "id": "import",
+      "label": "Import grain",
+      "costs": [{ "type": "gold", "amount": 2 }],
+      "outcomes": [
+        { "chance": 1.0, "deltas": [{ "type": "food", "amount": 2 }] }
+      ]
+    }
+  ]
+}
+
+

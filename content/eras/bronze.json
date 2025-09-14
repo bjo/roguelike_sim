@@ -1,0 +1,15 @@
+{
+  "id": "bronze",
+  "rules": [
+    {
+      "id": "bronze_rule_base",
+      "era": "bronze",
+      "description": "Foundations of agriculture and city-state rivalry.",
+      "effects": [
+        { "id": "bronze_food_bias", "scope": "global", "tags": ["agriculture"], "modifiers": [{ "kind": "yield_add", "resource": "food", "amount": 1 }], "duration": "permanent" }
+      ]
+    }
+  ]
+}
+
+

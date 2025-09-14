@@ -1,0 +1,38 @@
+# Unity
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/*.csproj
+/*.unityproj
+/*.sln
+/*.suo
+/*.tmp
+/*.user
+/*.userprefs
+/*.pidb
+/*.booproj
+/*.svd
+/.vs/
+/.idea/
+/*.orig
+Exports/
+MemoryCaptures/
+Assets/AssetStoreTools*
+
+# Addressables
+/ServerData/
+/Assets/AddressableAssetsData/
+
+# Crashlytics/Analytics
+crashlytics-build.properties
+crashlytics-build.properties
+
+# OS
+.DS_Store
+Thumbs.db
+
+
