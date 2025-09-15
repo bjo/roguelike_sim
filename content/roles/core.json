@@ -1,0 +1,56 @@
+[
+  {
+    "id": "farmer",
+    "label": "Farmer",
+    "eraUnlock": "bronze",
+    "tags": ["agriculture"],
+    "production": [
+      { "type": "food", "amount": 2 }
+    ]
+  },
+  {
+    "id": "miner",
+    "label": "Miner",
+    "eraUnlock": "bronze",
+    "tags": ["industry"],
+    "production": [
+      { "type": "materials", "amount": 2 }
+    ]
+  },
+  {
+    "id": "artisan",
+    "label": "Artisan",
+    "eraUnlock": "bronze",
+    "tags": ["industry"],
+    "production": [
+      { "type": "production", "amount": 2 }
+    ]
+  },
+  {
+    "id": "scholar",
+    "label": "Scholar",
+    "eraUnlock": "bronze",
+    "tags": ["knowledge"],
+    "production": [
+      { "type": "knowledge", "amount": 1 }
+    ]
+  },
+  {
+    "id": "priest",
+    "label": "Priest",
+    "eraUnlock": "bronze",
+    "tags": ["unity"],
+    "production": [
+      { "type": "unity", "amount": 1 }
+    ]
+  },
+  {
+    "id": "merchant",
+    "label": "Merchant",
+    "eraUnlock": "bronze",
+    "tags": ["trade"],
+    "production": [
+      { "type": "gold", "amount": 2 }
+    ]
+  }
+]

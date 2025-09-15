@@ -10,6 +10,9 @@ namespace RoguelikeSim.Core {
     public int EraTurn = 0;
     public float Entropy = 0f;
     public Dictionary<string, int> Resources = new Dictionary<string, int>();
+
+    // Cities and their role assignments
+    public List<CityModel> Cities = new List<CityModel>();
   }
 }
 

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "fields",
+    "label": "Fields",
+    "eraUnlock": "bronze",
+    "tags": ["agriculture"],
+    "roleId": "farmer",
+    "capacity": 2
+  },
+  {
+    "id": "mine",
+    "label": "Mine",
+    "eraUnlock": "bronze",
+    "tags": ["industry"],
+    "roleId": "miner",
+    "capacity": 2
+  },
+  {
+    "id": "workshop",
+    "label": "Workshop",
+    "eraUnlock": "bronze",
+    "tags": ["industry"],
+    "roleId": "artisan",
+    "capacity": 2
+  },
+  {
+    "id": "library",
+    "label": "Library",
+    "eraUnlock": "bronze",
+    "tags": ["knowledge"],
+    "roleId": "scholar",
+    "capacity": 1
+  },
+  {
+    "id": "temple",
+    "label": "Temple",
+    "eraUnlock": "bronze",
+    "tags": ["unity"],
+    "roleId": "priest",
+    "capacity": 1
+  },
+  {
+    "id": "market",
+    "label": "Market",
+    "eraUnlock": "bronze",
+    "tags": ["trade"],
+    "roleId": "merchant",
+    "capacity": 2
+  }
+]

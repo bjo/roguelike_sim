@@ -1,0 +1,116 @@
+[
+  {
+    "id": "prepare_baths",
+    "label": "Build Public Baths (Plague Prep)",
+    "category": "governance",
+    "eraUnlock": "bronze",
+    "actionPointCost": 1,
+    "costs": [
+      { "type": "production", "amount": 3 },
+      { "type": "unity", "amount": 1 }
+    ],
+    "addEffects": [
+      {
+        "id": "plague_resilience_baths",
+        "scope": "city",
+        "tags": ["health", "infrastructure"],
+        "modifiers": [
+          { "kind": "yield_add", "resource": "unity", "amount": 1 }
+        ],
+        "duration": "permanent"
+      }
+    ]
+  },
+  {
+    "id": "build_defenses",
+    "label": "Build Defensive Walls",
+    "category": "military",
+    "eraUnlock": "bronze",
+    "actionPointCost": 1,
+    "costs": [
+      { "type": "production", "amount": 3 },
+      { "type": "gold", "amount": 1 }
+    ],
+    "addEffects": [
+      {
+        "id": "city_defense_bonus",
+        "scope": "city",
+        "tags": ["defense"],
+        "modifiers": [],
+        "duration": "permanent"
+      }
+    ]
+  },
+  {
+    "id": "military_buildup",
+    "label": "Raise Expeditionary Force",
+    "category": "military",
+    "eraUnlock": "bronze",
+    "actionPointCost": 1,
+    "cooldownTurns": 2,
+    "costs": [
+      { "type": "food", "amount": 2 },
+      { "type": "gold", "amount": 2 }
+    ],
+    "addEffects": [
+      {
+        "id": "expedition_ready",
+        "scope": "city",
+        "tags": ["military"],
+        "modifiers": [],
+        "duration": "turns",
+        "remainingTurns": 3
+      }
+    ]
+  },
+  {
+    "id": "select_tech",
+    "label": "Select Technology to Research",
+    "category": "knowledge",
+    "eraUnlock": "bronze",
+    "actionPointCost": 1,
+    "tests": [ { "metric": "knowledge", "dc": 3, "advantageTags": ["knowledge"] } ],
+    "costs": [ { "type": "knowledge", "amount": 3 } ],
+    "addEffects": [
+      {
+        "id": "tech_slot_unlocked",
+        "scope": "global",
+        "tags": ["tech"],
+        "modifiers": [],
+        "duration": "instant"
+      }
+    ]
+  },
+  {
+    "id": "start_wonder",
+    "label": "Commission Wonder",
+    "category": "infrastructure",
+    "eraUnlock": "bronze",
+    "actionPointCost": 1,
+    "project": { "id": "wonder_project", "label": "Wonder Construction", "progressRequired": 10, "progressPerTurnTag": "wonder" },
+    "costs": [
+      { "type": "production", "amount": 3 },
+      { "type": "gold", "amount": 2 }
+    ]
+  },
+  {
+    "id": "upgrade_irrigation",
+    "label": "Implement Irrigation (Farm Upgrade)",
+    "category": "infrastructure",
+    "eraUnlock": "bronze",
+    "actionPointCost": 1,
+    "requiresTags": ["tech_irrigation"],
+    "costs": [ { "type": "unity", "amount": 2 } ],
+    "addEffects": [
+      {
+        "id": "irrigated_fields_bonus",
+        "scope": "city",
+        "tags": ["agriculture"],
+        "modifiers": [
+          { "kind": "yield_add", "resource": "food", "amount": 1 }
+        ],
+        "duration": "permanent"
+      }
+    ]
+  }
+]
